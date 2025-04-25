@@ -124,3 +124,13 @@ Admin has been notified!`
     delete userSessions[from];
   }
 }
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Bot is running 🚀');
+});
+
+app.listen(process.env.PORT || 8000, () => {
+  console.log('Server started on port 8000');
+});
